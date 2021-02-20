@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cars/Car.gd" type="Script" id=1]
+[ext_resource path="res://CarCamera.gd" type="Script" id=2]
+
+[node name="VehicleBody" type="VehicleBody"]
+script = ExtResource( 1 )
+
+[node name="SpringArm" type="SpringArm" parent="."]
+transform = Transform( -1, 0, 3.25841e-07, 1.33051e-07, 0.912834, 0.40833, -2.97439e-07, 0.40833, -0.912834, 0, 4.13814, 0 )
+spring_length = 10.0
+script = ExtResource( 2 )
+
+[node name="ClippedCamera" type="ClippedCamera" parent="SpringArm"]
