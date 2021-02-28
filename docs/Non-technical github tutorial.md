@@ -24,3 +24,25 @@ Shortcut to run the project within editor is F5. You can also run the project fr
 
 ### Running more than one instance of project (multiplayer testing)
 On godot project selection screen (the screen which opens when you just open the godot engine), click the project and click `Run` button to the right. You can open new instance of godot and run project again. This way you will be able to join/host multiple games at the same time on your own machine.
+
+# Syncing changes
+## Downloading changes (pull)
+When somebody else makes changes, you have to manually download those changes.
+1. Click "Fetch changes" in top part of github desktop.
+2. If there are any new changes, the same button will say `Pull origin`. That means there are some pending changes you need to download.
+
+## Commit your changes
+**It is highly important that you "commit" and upload your changes often**
+
+Just edit the project in godot editor like you normally would. When you want to share those changes, you must follow these steps:
+1. In changes tab of left-hand side of github desktop, you will see list of all files you have changed. Carefully check if that is the list of files you did change.
+2. Below changes, above "Description" textbox, edit "Summary" text field. You must describe what changes did you make in a short sentence. For example `Created a new car: MY_COOL_CAR_NAME`. Other people will read those descriptions and understand your work better. This is important in team environment.
+3. Click `Commit to main` button.
+
+This will only save these changes on your computer. You will be able to undo that if you want. However, others won't see your changes until you:
+## Upload your changes (push)
+When you have some not-uploaded commits, you must "push" those changes so that others can see and download your changes.
+
+1. Click "Push origin" button in upper part of github desktop.
+
+In case 
