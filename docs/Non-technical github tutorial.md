@@ -46,3 +46,4 @@ This will only save these changes on your computer. You will be able to undo tha
 When you have some not-uploaded commits, you must "push" those changes so that others can see and download your changes.
 
 1. Click "Push origin" button in upper part of github desktop. This will push any recently created commits online, so that everyone can see your work and sync up to it.
+2. You might get a message "You need to FETCH others' changes", something like that. In that case, press `Fetch`, go to *Downloading changes (pull)*, and then come back to *Uploading your changes (push)*
