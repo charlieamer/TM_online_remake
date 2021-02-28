@@ -34,6 +34,8 @@ When somebody else makes changes, you have to manually download those changes.
 ## Commit your changes
 **It is highly important that you "commit" and upload your changes often**
 
+Commit is like a save-point of your work. Any time you make a commit, you will be able to undo to a specific save-point even if you close your editor.
+
 Just edit the project in godot editor like you normally would. When you want to share those changes, you must follow these steps:
 1. In changes tab of left-hand side of github desktop, you will see list of all files you have changed. Carefully check if that is the list of files you did change.
 2. Below changes, above "Description" textbox, edit "Summary" text field. You must describe what changes did you make in a short sentence. For example `Created a new car: MY_COOL_CAR_NAME`. Other people will read those descriptions and understand your work better. This is important in team environment.
@@ -43,6 +45,4 @@ This will only save these changes on your computer. You will be able to undo tha
 ## Upload your changes (push)
 When you have some not-uploaded commits, you must "push" those changes so that others can see and download your changes.
 
-1. Click "Push origin" button in upper part of github desktop.
-
-In case 
+1. Click "Push origin" button in upper part of github desktop. This will push any recently created commits online, so that everyone can see your work and sync up to it.
