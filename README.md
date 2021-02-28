@@ -20,3 +20,5 @@ If you are a programmer and you already know how this git/github works, you don'
   - *This project doesn't use C#, so you don't need to download "Mono version (C# support)"*
   - *I advise you to download standard 64-bit version, but if it doesn't work (99% of cases it should work), download standard 32 bit*
 
+# Tutorial for non-technical people
+https://github.com/charlieamer/TM_online_remake/blob/main/docs/Non-technical%20github%20tutorial
