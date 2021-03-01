@@ -3,7 +3,7 @@ Since anyone can join to contribute, I will try to give a brief tutorial on gith
 
 For a non-programmer, the simplest explanation of "github" (where the project files are hosted) is a google drive / dropbox shared folder, where anyone can edit files, and the files are synced to anyone who has the project downloaded. Pretty neat, huh ?
 
-Github is not as automatic as google drive / dropbox though. You have to manually upload your updates, and download other people's updates. But you will see it won't be a hussly.
+Github is not as automatic as google drive / dropbox though. You have to manually upload your updates, and download other people's updates. But you will see it won't be a hussle.
 
 Also, you might see me saying words "repo" or "repository" often. It just means "this project on github", or equivalent to gdrive / dropbox's shared folder.
 
@@ -46,3 +46,4 @@ This will only save these changes on your computer. You will be able to undo tha
 When you have some not-uploaded commits, you must "push" those changes so that others can see and download your changes.
 
 1. Click "Push origin" button in upper part of github desktop. This will push any recently created commits online, so that everyone can see your work and sync up to it.
+2. You might get a message "You need to FETCH others' changes", something like that. In that case, press `Fetch`, go to *Downloading changes (pull)*, and then come back to *Uploading your changes (push)*
