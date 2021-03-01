@@ -28,12 +28,12 @@ _global_script_class_icons={
 
 config/name="TM_online"
 run/main_scene="res://menus/test-level-opener.tscn"
-config/icon="res://icon.png"
 
 [autoload]
 
 G="*res://G.gd"
 N="*res://N.gd"
+U="*res://U.gd"
 
 [input]
 
