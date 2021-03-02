@@ -10,6 +10,7 @@ export var max_speed = 30
 puppet var input_engine_power = 0
 puppet var input_brake_power = 0
 puppet var input_steering = 0
+var input_gun_firing = false
 
 var required_speed_for_reverse = 0.1
 var max_steering_angle = 35
@@ -50,6 +51,7 @@ func _process(_delta):
 		rset_unreliable("input_brake_power", input_brake_power)
 		rset_unreliable("input_steering", input_steering)
 		rpc_unreliable("apply_transform_from_master", transform)
+		$Guns.is_gun_firing = input_gun_firing
 
 puppet func apply_transform_from_master(new_transform: Transform):
 	transform = new_transform

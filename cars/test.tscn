@@ -130,3 +130,6 @@ damping_relaxation = 1.0
 transform = Transform( -8.14603e-08, -0.2, 0, 0.5, -3.25841e-08, 0, 0, 0, 0.5, 0, 0, 0 )
 mesh = SubResource( 6 )
 material/0 = null
+
+[node name="Spatial" type="Spatial" parent="Guns" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.836464, 1.79377 )

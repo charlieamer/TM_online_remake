@@ -11,7 +11,8 @@ func _data_ready():
 	RoomName.text = "Room name"
 	if G.room_owner != G.my_id():
 		StartButton.hide()
-		Level.editable = false
+		for idx in range(LevelDropdown.get_item_count()):
+			LevelDropdown.set_item_disabled(idx, true)
 	Name.text = G.my_agent().name
 	select_car(G.my_agent().car_name)
 	select_level(G.level_name)

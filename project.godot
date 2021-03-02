@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "Level",
 "language": "GDScript",
 "path": "res://levels/Level.gd"
+}, {
+"base": "Spatial",
+"class": "ProjectileBase",
+"language": "GDScript",
+"path": "res://cars/common/ProjectileBase.gd"
 } ]
 _global_script_class_icons={
 "Car": "",
-"Level": ""
+"Level": "",
+"ProjectileBase": ""
 }
 
 [application]
@@ -55,6 +61,11 @@ SteerLeft={
 SteerRight={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
+}
+FireGun={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
  ]
 }
 

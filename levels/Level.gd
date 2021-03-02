@@ -35,10 +35,13 @@ func get_available_spawn_point() -> Spatial:
 			return child
 	return null
 
-func get_car_by_agent(agent) -> Car:
-	if has_node(str(agent.id)):
-		return get_node(str(agent.id)) as Car
+func get_car_by_agent_id(agent_id: int) -> Car:
+	if has_node(str(agent_id)):
+		return get_node(str(agent_id)) as Car
 	return null
+
+func get_car_by_agent(agent) -> Car:
+	return get_car_by_agent_id(agent.id)
 
 func set_car_to_agent(agent, new_car: Car) -> Car:
 	var current_car = get_car_by_agent(agent)

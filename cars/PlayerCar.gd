@@ -5,7 +5,7 @@ func _physics_process(delta):
 		self.input_engine_power = Input.get_action_strength("Accelerate")
 		self.input_brake_power = Input.get_action_strength("Brake")
 		self.input_steering = Input.get_action_strength("SteerLeft") - Input.get_action_strength("SteerRight")
-
+		self.input_gun_firing = Input.is_action_pressed("FireGun")
 
 func _ready():
 	if is_network_master():

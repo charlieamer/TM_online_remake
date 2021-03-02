@@ -9,4 +9,7 @@
 transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0 )
 
 [node name="Spatial" type="Spatial" parent="SpawnPoints" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -127.839, 6.13793, 59.9642 )
+transform = Transform( 0.746243, 0, 0.665673, 0, 1, 0, -0.665673, 0, 0.746243, -123.712, 6.13792, 57.9548 )
+
+[node name="Spatial2" type="Spatial" parent="SpawnPoints" index="1"]
+transform = Transform( -0.829818, 0, -0.558035, 0, 1, 0, 0.558035, 0, -0.829818, -90.9808, 6.13792, 99.999 )
