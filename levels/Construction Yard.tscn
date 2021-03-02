@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://level-base.tscn" type="PackedScene" id=1]
+[ext_resource path="res://levels/yard/YARD.glb" type="PackedScene" id=2]
+
+[node name="Spatial" instance=ExtResource( 1 )]
+
+[node name="YARD" parent="." index="0" instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0 )
+
+[node name="Spatial" type="Spatial" parent="SpawnPoints" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -127.839, 6.13793, 59.9642 )

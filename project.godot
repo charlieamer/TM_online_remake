@@ -58,6 +58,12 @@ SteerRight={
  ]
 }
 
+[physics]
+
+3d/default_gravity=30.0
+3d/smooth_trimesh_collision=true
+
 [rendering]
 
+quality/driver/driver_name="GLES2"
 environment/default_environment="res://default_env.tres"

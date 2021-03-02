@@ -52,6 +52,9 @@ mass = 400.0
 [node name="SpringArm" parent="." index="0"]
 transform = Transform( -1, 0, 3.25841e-07, 1.33051e-07, 0.912834, 0.40833, -2.97439e-07, 0.40833, -0.912834, 0, 2.40714, 0 )
 
+[node name="ClippedCamera" parent="SpringArm" index="0"]
+transform = Transform( 1, -2.27374e-13, -1.7053e-13, -1.42109e-14, 1, 2.98023e-08, 0, -2.98023e-08, 1, 0, 0, 0 )
+
 [node name="CollisionShape" type="CollisionShape" parent="." index="1"]
 transform = Transform( 1, 0, 0, 0, 0.5, 0, 0, 0, 2, 0, 0.901934, 0 )
 shape = SubResource( 1 )
@@ -65,10 +68,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25617, 0.386658, -1.77715 )
 use_as_traction = true
 wheel_roll_influence = 0.2
 wheel_rest_length = 0.1
-wheel_friction_slip = 10.0
-suspension_travel = 0.1
+wheel_friction_slip = 2.0
+suspension_travel = 0.2
 suspension_stiffness = 100.0
-damping_compression = 10.0
+suspension_max_force = 100000.0
+damping_compression = 1.0
 damping_relaxation = 1.0
 
 [node name="MeshInstance" type="MeshInstance" parent="VehicleWheel" index="0"]
@@ -81,10 +85,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.27128, 0.386658, -1.77715 )
 use_as_traction = true
 wheel_roll_influence = 0.2
 wheel_rest_length = 0.1
-wheel_friction_slip = 10.0
-suspension_travel = 0.1
+wheel_friction_slip = 2.0
+suspension_travel = 0.2
 suspension_stiffness = 100.0
-damping_compression = 10.0
+suspension_max_force = 100000.0
+damping_compression = 1.0
 damping_relaxation = 1.0
 
 [node name="MeshInstance" type="MeshInstance" parent="VehicleWheel2" index="0"]
@@ -97,10 +102,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25617, 0.386658, 1.87247 )
 use_as_steering = true
 wheel_roll_influence = 0.2
 wheel_rest_length = 0.1
-wheel_friction_slip = 10.0
-suspension_travel = 0.1
+wheel_friction_slip = 2.0
+suspension_travel = 0.2
 suspension_stiffness = 100.0
-damping_compression = 10.0
+suspension_max_force = 100000.0
+damping_compression = 1.0
 damping_relaxation = 1.0
 
 [node name="MeshInstance" type="MeshInstance" parent="VehicleWheel3" index="0"]
@@ -113,10 +119,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.27128, 0.386658, 1.87247 )
 use_as_steering = true
 wheel_roll_influence = 0.2
 wheel_rest_length = 0.1
-wheel_friction_slip = 10.0
-suspension_travel = 0.1
+wheel_friction_slip = 2.0
+suspension_travel = 0.2
 suspension_stiffness = 100.0
-damping_compression = 10.0
+suspension_max_force = 100000.0
+damping_compression = 1.0
 damping_relaxation = 1.0
 
 [node name="MeshInstance" type="MeshInstance" parent="VehicleWheel4" index="0"]
